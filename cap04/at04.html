@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viwerport" content="width=divice-width, initial-scale=0.1">
+  <title>Página de recursos multimídia </title>
+</head>
+
+<body>
+
+    <header>   
+  <h2> Página de recursos multimídia </h2>
+  <p> Bem-vindo a área de recurso Multimídia, aqui você terá imagens, vídeos e áudios de como praticar e melhorar seus conhecimentos</p>
+    </header>
+
+    <main>
+
+        <figure>
+
+            <video
+                controls
+                width="800"
+                height="450"
+                poster="foto-aula.jpg"
+                preload="metadata">
+
+                <source src="https://youtu.be/Fhy-5CtVkiM?si=W1RtwA7soXO21vMa" type="video/mp4">
+
+                <source src="https://youtu.be/Fhy-5CtVkiM?si=W1RtwA7soXO21vMa/aula-html.webm" type="video/webm">
+
+                <track
+                    kind="subtitles"
+                    srclang="pt"
+                    label="Português"
+                    src="legendas/aula-html.vtt"
+                    default>
+
+            </video>
+            <figcaption>
+                Introdução de HTML5.
+            </figcaption>
+          <p>
+               Seu navegador não suporta o formato do video HTML5.
+
+                <a href="https://youtu.be/Fhy-5CtVkiM?si=W1RtwA7soXO21vMa">
+                    Baixe aqui
+                </a>
+          </p>
+
+        </figure>
+
+        <figure>
+
+            <audio controls preload="metadata">
+
+                <source src="audios/podcast.mp3" type="audio/mpeg">
+
+                <source src="audios/podcast.ogg" type="audio/ogg">
+
+                Seu navegador não suporta áudio.
+
+                <a href="audios/podcast.mp3">
+                    Baixar áudio
+                </a>
+
+            </audio>
+
+            <figcaption>
+
+                Podcast sobre desenvolvimento web —
+
+                <a href="transcricao.html">
+                    Ver transcrição
+                </a>
+
+            </figcaption>
+
+        </figure>
+
+        <figure>
+
+            <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube-nocookie.com/embed/Ejkb_YpuHWs"
+                title="Vídeo educacional sobre HTML"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <figcaption>
+                Vídeo do YouTube.
+            </figcaption>
+
+        </figure>
+
+        <figure>
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="img/banner-wide.jpg">
+
+                <img
+                    src="img/banner-mobile.jpg"
+                    alt="Banner de tecnologias web"
+                    width="800"
+                    height="450">
+
+            </picture>
+
+            <figcaption>
+                Banner ilustrativo sobre tecnologias web.
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+    <footer>
+
+      
+
+        <p>
+            <a href="initialpage.html">
+                ← Voltar para a Página Principal
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
