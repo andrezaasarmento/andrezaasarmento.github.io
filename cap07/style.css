@@ -1,0 +1,221 @@
+/* =====================================================================
+   atv01.css  —  ARQUIVO DE TRABALHO DA ATIVIDADE
+   ---------------------------------------------------------------------
+   Este CSS é funcional, porém deliberadamente básico:
+     - usa apenas seletores de tipo, de classe e de id;
+     - expressa TODAS as medidas em pixels (px);
+     - contém repetição de regras.
+   Sua tarefa é refatorá-lo conforme o enunciado, sem alterar o HTML.
+   ===================================================================== 
+
+Bloco 1: 
+O em usa o tamanho da fonte do elemento pai e pode ser afetado por aninhamentos. O rem usa a fonte raiz (html), sem sofrer aninhamento. Já % é relativo ao tamanho do elemento pai ou da viewport, dependendo da propriedade utilizada. */
+
+/* ---------- Base ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a::before {
+  content: "› ";
+  color: #BFC5ED;
+}
+
+.menu > a {
+  color: #5264CB;
+  font-size: 1rem;
+  text-decoration: none;
+}
+/* Se for o espaço, todos os outros elementos dentro desse determinado elemento/classe são alcançados, independente do grau de parentesco. Já o (>) alcança apenas os filhos diretos. */
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 32px;
+  max-width: 70.27vw;
+}
+
+h2 + p {
+  color: #1565c0;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.destaque{
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+}
+
+.destaque ~ p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+}
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 20.5vw; /* Notebooks comuns: base de 1366px */ 
+  vertical-align: top;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+.cartao:nth-child(even){
+  background-color: #E2D592;
+}
+
+.cartao:nth-child(odd){
+  background-color: #92A0E2;
+}
+
+/* O nth-child() é uma ferramenta que permite selecionar um elemento entre uma lista com base na organização do HTML. */
+
+.cartao:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+a.botao{
+  background-color: #76C67F;
+}
+
+/* O a.botao (0, 1, 1) vence pela maior especificidade. Se existisse um seletor como #inscrever a.botao (1, 1, 1), ele teria prioridade por ser ainda mais específico. */
+
+.botao:hover{
+  color: #2F7455;
+  background-color: #48B754;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+.lista-dias > li {
+  font-weight: bold;
+}
+.lista-dias > li li {
+  font-weight: normal;
+  color: black;
+}
+.lista-dias > li:first-child{
+  color: blue;
+} 
+.lista-dias > li:last-child{
+  color: red;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 25vw;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+label:not(:last-of-type)::after {
+  content: " *";
+  color: red;
+}
+
+input, textarea {
+  display: block;
+  width: 320px;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #999999;
+}
+
+input:focus, textarea:focus  {
+  background-color: #CDE5E2;
+  border-radius: 10px;
+}
+
+input[type="email"]{
+ border: 2px solid #6881DF;
+}
+
+input[type="password"]{
+  border: 2px solid #DFC568;
+}
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 24px;
+  font-size: 0.875rem;
+}
