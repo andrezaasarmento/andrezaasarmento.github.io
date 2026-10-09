@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" class="l" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/10529/10529218.png">
+    <title>E-Books</title>
+    <style>
+        #Categoria:hover {
+            background-color: rgb(158, 255, 177);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Aviso   -->
+    <div class="text-white text-center py-2" style="background-color: darkblue;">
+        Site em processo de finalização
+        Frete grátis acima de R$ 199
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">E-Books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"></a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Início
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Quem somos</a></li>
+                                <li><a class="dropdown-item" href="#">Como funciona</a></li>
+                                <li><a class="dropdown-item" href="#">Perguntas frequentes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"></a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categoria
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                <li><a class="dropdown-item" href="#">Clássicos</a></li>
+                                <li><a class="dropdown-item" href="#">Infantis</a></li>
+                                <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"></a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ofertas
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#destaques">Destaques</a></li>
+                                <li><a class="dropdown-item" href="#ofertas">Ofertas da Semana</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!-- Cart icon -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+            </div>
+            <div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar produtos...">
+                    <button class="btn btn-outline-primary">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Carrossel -->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/736x/a4/ed/ff/a4edff61f38c9c36a7fdbe53f57d1ac5.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/b0/f0/08/b0f00832388d9cf87b8f5743e73a08f1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8vwvve3cGZ55i0WlonZhCEm0HQ17a4PT9CWb5hOEEg&s=10" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="mt-4" style="border-bottom: 2px solid purple">Categorias</h2>
+        <!-- Categorias -->
+        <div class="row g-3 fw-bold">
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Todos</a></div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Clássicos</a></div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Infantis</a></div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Sci-Fi</a></div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Romance</a></div>
+            </div>
+            <div class="col-lg-2 col-4">
+                <div id="Categoria" class="card text-center p-2 border border-2 border-success"><a href="#"
+                        style="color:rgb(42, 79, 68); text-decoration: none;">Fantasia</a></div>
+            </div>
+        </div>
+
+        <h2 id="destaques" class="mt-4 text-danger fw-bold">Destaques</h2>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+                    <img src="https://m.media-amazon.com/images/I/81QluJ4QXyL._AC_UF1000,1000_QL80_FMwebp_.jpg" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">O Pequeno Príncipe</h5>
+                        <p class="card-text">
+                            <span class="text-muted text-decoration-line-through">R$ 29,99</span>
+                            <strong class="text-danger">R$ 19,99</strong>
+                        </p>
+                        <p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn fw-bold"
+                                style="background-color: rgb(132, 30, 228); color:white; border: none;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Saiba mais sobre O Pequeno Príncipe
+                            </button>
+
+                            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">O Pequeno Príncipe</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://m.media-amazon.com/images/I/81QluJ4QXyL._AC_UF1000,1000_QL80_FMwebp_.jpg"/>
+                                      <p>  O pequeno príncipe conta a história de um menino vindo de um pequeno asteroide que encontra um piloto de avião perdido no deserto do Saara. O príncipe narra suas aventuras em diferentes planetas em busca de um carneiro para manter o seu asteroide livre da infestação de baobás e, assim, proteger a rosa que cultiva. Mas, a cada novo planeta visitado, conhece personagens como o rei, o geógrafo e o acendedor de lampiões, que fazem com que reveja seus propósitos e sua opinião sobre os adultos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <button class="btn w-100 fw-bold"
+                            style="background-color: rgb(42, 79, 68); color:white; border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                            Adicionar ao
+                            carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+                    <img src="https://cdn.awsli.com.br/2500x2500/638/638756/produto/24436652770b9bdf73b.jpg"
+                        class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Alice no País das Maravilhas</h5>
+                        <p class="card-text">
+                            <span class="text-muted text-decoration-line-through">R$ 32,99</span>
+                            <strong class="text-danger">R$ 23,99</strong>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn fw-bold"
+                            style="background-color:rgb(132, 30, 228); color:white; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#example2Modal">
+                            Saiba mais sobre Alice no País das Maravilhas
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="example2Modal" tabindex="-1" aria-labelledby="example2ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="example2ModalLabel">Alice no País das Maravilhas</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://cdn.awsli.com.br/2500x2500/638/638756/produto/24436652770b9bdf73b.jpg"/>
+                                      <p>  Alice no País das Maravilhas é a obra infantil mais conhecida de Charles Lutwidge Dodgson, sob o pseudônimo de Lewis Carroll. O livro conta a história de uma menina chamada Alice que ao perseguir um coelho branco antropomórfico, acaba sendo transportada para um lugar fantástico, povoado de criaturas peculiares, como o Chapeleiro Louco, a Rainha de Copas, a Lagarta e o Gato de Cheshire. Ao longo de sua jornada, Alice vive diversas aventuras e é confrontada com o absurdo, com o impossível, e passa a questionar tudo o que aprendeu até ali. Essa é uma das obras mais célebres do gênero literário nonsense.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <button class="btn w-100 fw-bold"
+                            style="background-color: rgb(42, 79, 68); color:white; border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                            Adicionar ao
+                            carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+                    <img src="https://m.media-amazon.com/images/I/81flXGbA6-L._UF1000,1000_QL80_.jpg"
+                        class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">A Biblioteca da Meia-Noite</h5>
+                        <p class="card-text">
+                            <span class="text-muted text-decoration-line-through">R$ 39,99</span>
+                            <strong class="text-danger">R$ 29,99</strong>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn fw-bold"
+                            style="background-color: rgb(132, 30, 228); color:white; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#example3Modal">
+                            Saiba mais sobre A Biblioteca da Meia-Noite
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="example3Modal" tabindex="-1" aria-labelledby="example3ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="example3ModalLabel">A Biblioteca da Meia-Noite</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://m.media-amazon.com/images/I/81flXGbA6-L._UF1000,1000_QL80_.jpg"
+                        class="card-img-top"/>
+                                      <p>  Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <button class="btn w-100 fw-bold"
+                            style="background-color: rgb(42, 79, 68); color:white; border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                            Adicionar ao
+                            carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+                    <img src="https://livrariascuritiba.vteximg.com.br/arquivos/ids/1663114/LV417866.jpg?v=638761783514030000" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter e a Pedra Filosofal</h5>
+                        <p class="card-text">
+                            <span class="text-muted text-decoration-line-through">R$ 35,99</span>
+                            <strong class="text-danger">R$ 26,99</strong>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn fw-bold"
+                            style="background-color: rgb(132, 30, 228); color:white; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#example4Modal">
+                            Saiba mais sobre Harry Potter e a Pedra Filosofal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="example3Modal" tabindex="-1" aria-labelledby="example3ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="example3ModalLabel">Harry Potter e a Pedra Filosofal</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://livrariascuritiba.vteximg.com.br/arquivos/ids/1663114/LV417866.jpg?v=638761783514030000"
+                        class="card-img-top"/>
+                                      <p>  Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <button class="btn w-100 fw-bold"
+                            style="background-color: rgb(42, 79, 68); color:white; border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                            Adicionar ao
+                            carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+                    <img src="https://m.media-amazon.com/images/I/91h2ZtixQ4L.jpg" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Frankenstein</h5>
+                        <p class="card-text">
+                            <span class="text-muted text-decoration-line-through">R$ 29,99</span>
+                            <strong class="text-danger">R$ 19,99</strong>
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn fw-bold"
+                            style="background-color: rgb(132, 30, 228); color:white; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#example4Modal">
+                            Saiba mais sobre Frankenstein
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="example4Modal" tabindex="-1" aria-labelledby="example4ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="example4ModalLabel">Frakenstein</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://m.media-amazon.com/images/I/91h2ZtixQ4L.jpg"/>
+                                      <p>  O livro narra a história do ousado doutor Victor Frankenstein, cientista que se lança no experimento de retomar a vida de um ser inanimado. Isso resulta na concepção de uma criatura sobre-humana e monstruosa que passa a lhe perseguir, tornando-se um arquétipo de seu próprio criador. Este aspecto do enredo é responsável pela força da obra. Entre vários aspectos geniais, também se destaca a abordagem das dualidades humano/inumano e natural/artificial. Segundo Mary Shelley, após muita observação das conversas entre Lord Byron e Percy Shelley (um grande poeta, além de ser marido da autora) sobre doutrinas filosóficas e ciências, como o darwinismo, a autora sentiu-se estimulada a escrever uma obra que trouxesse elementos fantásticos e sombrios associados à ciência.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <button class="btn w-100 fw-bold"
+                            style="background-color: rgb(42, 79, 68); color:white; border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                            Adicionar ao
+                            carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div id="ofertas" class="text-center mt-4">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6">
+                    <img src="https://i.pinimg.com/736x/a4/ed/ff/a4edff61f38c9c36a7fdbe53f57d1ac5.jpg" class="img-fluid" alt="Produto">
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <img src="https://i.pinimg.com/736x/b0/f0/08/b0f00832388d9cf87b8f5743e73a08f1.jpg" class="img-fluid" alt="Produto">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class=" col-md-3 col-sm-6">
+            <h2>Receba nossas ofertas</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class=" col-md-4 col-sm-12">
+            <div class="input-group mt-4">
+                <input type="email" class="form-control" placeholder="Seu e-mail" aria-label="Recipient’s e-mail"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Assinar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3 border-bottom ">
+                    🏢 Institucional
+                    <ul style="text-decoration: none;">
+                        <li><a href="#" style="text-decoration: none;">Quem Somos</a></li>
+                        <li><a href="#" style="text-decoration: none;">Nossas Lojas</a></li>
+                        <li><a href="#" style="text-decoration: none;">Trabalhe Conosco</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 border-bottom">
+                    ❓ Ajuda
+                    <ul style="text-decoration: none;">
+                        <li><a href="#" style="text-decoration: none;">Prazo e Taxa de Entrega</a></li>
+                        <li><a href="#" style="text-decoration: none;">Trocas e Cancelamentos</a></li>
+                        <li><a href="#" style="text-decoration: none;">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 border-bottom">
+                    Redes sociais
+                    <div class="contatos">
+                        <a href="#" target="_blank"><img
+                                src="https://img.magnific.com/premium-vector/vector-whatsapp-social-media-logo_1093524-447.jpg?semt=ais_hybrid&w=740&q=80"
+                                style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 50%; margin: 10px; object-fit: cover;" /></a>
+                        <a href="#" target="_blank"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtYaDylkiyCQ0m61PpZ602Lp4c4aZ_C0OdgVulzmLgtJluVDFCgUOTKaF&s=10"
+                                style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 50%; margin: 10px; object-fit: cover;" /></a>
+                        <a href="#" target="_blank"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjrZcyFfKrBFZ5S5_yTVqkA71FOfTGxmtQSTHzpPmZ7mExUA3JCqQtag&s=10"
+                                style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 50%; margin: 10px; object-fit: cover;" /></a>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    Formas de pagamento
+                    <div class="contatos">
+                        <img src="https://img.icons8.com/color/1200/pix.jpg"
+                            style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 5px; margin: 10px; object-fit: cover;" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAko01TnjuKtJKWa62yl_SShhu4wldrixg372m6bzq9w&s=10"
+                            style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 5px; margin: 10px; object-fit: cover;" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2040/2040809.png"
+                            style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 5px; margin: 10px; object-fit: cover;" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/10384/10384161.png"
+                            style="border: 2px solid rgb(42, 79, 68); width: 35px; height: auto; border-radius: 5px; margin: 10px; object-fit: cover;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-secondary text-center py-3 border-top">
+            <div class="container">
+                <p class="mb-0 small">
+                    &copy; 2026 E-Books — CNPJ 15.041.115/1504-11
+                </p>
+            </div>
+        </footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>
